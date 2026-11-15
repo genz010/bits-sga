@@ -1,0 +1,70 @@
+# Git Commands Used in Assignment
+# Course: Software Development Practices | B.Sc. CS Semester 5
+# Repository: https://github.com/genz010/bits-sga
+
+1. git init
+   Initializes a new Git repository locally in the project directory.
+
+2. git status
+   Checks the status of the working tree and staging area to see tracked and untracked files.
+
+3. git add .
+   Stages all modified and new files in the current directory for the upcoming commit.
+
+4. git commit -m "initial commit : add index.html and about.html"
+   Records the initial snapshot of the project with index.html and about.html.
+
+5. git commit -m "student portal layout"
+   Creates a second commit recording the student portal layout changes in index.html.
+
+6. git commit --amend -m "student portal layout"
+   Modifies the most recent commit message without creating a new commit object.
+
+7. git branch feature
+   Creates a new branch named 'feature' branching off from the current commit on main.
+
+8. git checkout feature
+   Switches the active working branch from 'main' to the 'feature' branch.
+
+9. git branch
+   Lists all local branches in the repository and highlights the currently active branch with an asterisk (*).
+
+10. git add sem-5/software-developement-practice/about.html
+    Stages the specific modifications made to about.html on the feature branch.
+
+11. git commit -m "feat: add project overview "
+    Records a commit containing about.html changes on the feature branch.
+
+12. git checkout main
+    Switches the active working branch back to 'main'.
+
+13. git merge --no-ff feature -m "Merge branch 'feature' into main"
+    Merges the 'feature' branch into 'main' with an explicit merge commit to preserve branch history.
+
+14. git log --oneline
+    Displays a condensed, one-line summary of commit hashes and commit messages.
+
+15. git status --ignored
+    Shows the working tree status while explicitly listing files and folders ignored by .gitignore rules.
+
+16. git commit -m "added git ignore to ignore .log and temp/ dir"
+    Records a commit adding the .gitignore configuration file.
+
+17. git commit -m "test: experimental changes"
+    Records a temporary commit intended for demonstrating the undo operation.
+
+18. git log --oneline -n 3
+    Displays the last 3 commits in a compact one-line format to verify commit history before and after an operation.
+
+19. git reset --hard HEAD~1
+    Undoes the last commit by moving HEAD back one commit and discarding working directory changes.
+
+20. git remote -v
+    Displays the remote repository URLs configured for fetch and push operations.
+
+21. git push -u origin main
+    Pushes the local 'main' branch commits to the remote GitHub repository and sets upstream tracking.
+
+22. git push origin feature
+    Pushes the local 'feature' branch to the remote GitHub repository to show complete branch history.
+
